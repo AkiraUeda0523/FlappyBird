@@ -412,7 +412,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate /* 追加 */ {
     func setupYunkeru() {
         
         
-        let yunkeruTexter = SKTexture(imageNamed: "yunkeru")
+        let yunkeruTexter = SKTexture(imageNamed: "yunkeru1")
         yunkeruTexter.filteringMode = .linear
         
         
@@ -435,10 +435,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate /* 追加 */ {
             
             // 関連のノードを乗せるノードを作成
             let yunkeru = SKNode()
-            yunkeru.position = CGPoint(x: self.frame.size.width + yunkeruTexter.size().width / 2, y: 300)
+            yunkeru.position = CGPoint(x: self.frame.size.width + yunkeruTexter.size().width / 2, y: 200)
             yunkeru.zPosition = -50.0 // 雲より手前、地面より奥
-            yunkeru.xScale = 0.2
-            yunkeru.yScale = 0.2
+            yunkeru.xScale = 0.4
+            yunkeru.yScale = 0.4
             // 画面のY軸の中央値
             let center_y = self.frame.size.height
             // 壁のY座標を上下ランダムにさせるときの最大値
